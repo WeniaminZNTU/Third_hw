@@ -1,0 +1,63 @@
+:root{
+    --text-color: aliceblue;
+}
+
+body{
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.headerConteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #262626;
+}
+
+.rioLable{
+    margin: 30px;
+
+    font-family: 'Caveat', cursive;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+.navList{
+    font-family: 'BenchNine', sans-serif;
+}
+
+.navItemList{
+    display: inline-block;
+    padding: 0px 8px 8px 8px;
+}
+
+.navItemList > a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.5em;
+    font-family: 'Pragati+Narrow', sans-serif;
+    font-weight: 900;
+}
+
+.contactLable{
+    padding: 10px 25px;
+    border: 2px solid white;
+    margin: 30px 60px 30px 30px;
+    border-radius: 5%;
+
+    font-family: 'Pragati Narrow', sans-serif;
+    text-decoration: none;
+    font-size: 0.55em;
+    color: var(--text-color);
+}
+
+.contactLable:hover{
+    padding: 10px 25px;
+    border: 2px solid white;
+    margin: 30px 60px 30px 30px;
+
+    color: #333;
+    background-color: #eaeaea;
+}
