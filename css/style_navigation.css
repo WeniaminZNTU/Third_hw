@@ -7,57 +7,248 @@ body{
     line-height: 1.5;
 }
 
-.headerConteiner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media screen and (max-width: 1440px) and (min-width: 658px) {
+    .headerConteiner {
+        display: flex;
+        justify-content: space-between;
+        /*align-items: center;*/
+        align-items: flex-start;
 
-    background: #262626;
+        background: #262626;
+    }
+
+    .rioLable {
+        margin: 30px;
+
+        font-family: 'Caveat', cursive;
+        text-decoration: none;
+        font-size: 1.1em;
+        color: var(--text-color);
+    }
+
+    .navList {
+        font-family: 'BenchNine', sans-serif;
+        font-size: 1.18em;
+    }
+
+    .navListItem {
+        display: inline-block;
+        padding: 19px 8px 8px 8px;
+    }
+
+    .navListItem > a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 0.5em;
+        font-family: 'Pragati Narrow', sans-serif;
+        font-weight: 900;
+    }
+
+    .contactLable {
+        padding: 10px 25px;
+        border: 2px solid white;
+        margin: 30px 60px 30px 30px;
+        border-radius: 5%;
+
+        font-family: 'Pragati Narrow', sans-serif;
+        text-decoration: none;
+        font-size: 0.55em;
+        color: var(--text-color);
+    }
+
+    .contactLable:hover {
+        padding: 10px 25px;
+        border: 2px solid white;
+        margin: 30px 60px 30px 30px;
+
+        color: #333;
+        background-color: #eaeaea;
+    }
 }
 
-.rioLable{
-    margin: 30px;
+@media screen and (max-width: 657px) and (min-width: 481px) {
+    .headerConteiner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
-    font-family: 'Caveat', cursive;
-    text-decoration: none;
-    font-size: 1.1em;
-    color: var(--text-color);
+        background: #262626;
+    }
+
+    .rioLable {
+        padding: 15px 0px 0px 22.65%;
+
+        flex: 1 0 50%;
+
+        font-family: 'Caveat', cursive;
+        text-decoration: none;
+        font-size: 1.3em;
+        color: var(--text-color);
+    }
+
+    .navList {
+        font-family: 'BenchNine', sans-serif;
+        font-size: 1.4em;
+    }
+
+    .navListItem {
+        display: inline-block;
+        padding: 0px 8px;
+        /*margin: 0px;*/
+    }
+
+    .navListItem > a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 0.5em;
+        font-family: 'Pragati Narrow', sans-serif;
+        font-weight: 900;
+    }
+
+    .contactLable {
+        padding: 10px 25px;
+        border: 2px solid white;
+        margin: 15px 0px 35px 0px;
+        border-radius: 5%;
+
+        font-family: 'Pragati Narrow', sans-serif;
+        color: var(--text-color);
+        font-size: 0.55em;
+        text-decoration: none;
+    }
+
+    .contactLable:active {
+        padding: 10px 25px;
+        border: 2px solid white;
+        margin: 15px 0px 35px 0px;
+
+        color: #333;
+        background-color: #eaeaea;
+    }
 }
 
-.navList{
-    font-family: 'BenchNine', sans-serif;
+@media screen and (max-width: 480px) and (min-width: 321px) {
+    .headerConteiner {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        background: #262626;
+    }
+
+    .rioLable {
+        padding: 25px 0px 0px 0px;
+
+        font-family: 'Caveat', cursive;
+        text-decoration: none;
+        font-size: 1.3em;
+        color: var(--text-color);
+    }
+
+    .navList {
+        /*padding: 0px 0px 0px 0px;*/
+
+        font-family: 'BenchNine', sans-serif;
+        font-size: 1.3em;
+    }
+
+    .navListItem {
+        display: inline-block;
+        padding: 0px 8px;
+        /*margin: 0px;*/
+    }
+
+    .navListItem > a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 0.5em;
+        font-family: 'Pragati Narrow', sans-serif;
+        font-weight: 900;
+    }
+
+    .contactLable {
+        padding: 10px 25px;
+        border: 2px solid white;
+        margin: 15px 0px 40px 0px;
+        border-radius: 5%;
+
+        font-family: 'Pragati Narrow', sans-serif;
+        text-decoration: none;
+        font-size: 0.55em;
+        color: var(--text-color);
+    }
+
+    .contactLable:active {
+        padding: 10px 25px;
+        border: 2px solid white;
+        margin: 15px 0px 40px 0px;
+
+        color: #333;
+        background-color: #eaeaea;
+    }
 }
 
-.navItemList{
-    display: inline-block;
-    padding: 0px 8px 8px 8px;
-}
+@media screen and (max-width: 320px) and (min-width: 320px){
+    .headerConteiner {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
 
-.navItemList > a{
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 0.5em;
-    font-family: 'Pragati+Narrow', sans-serif;
-    font-weight: 900;
-}
+        font-weight: 1.5;
+        letter-spacing: -1px;
+        /*font-stretch: 100%;*/
 
-.contactLable{
-    padding: 10px 25px;
-    border: 2px solid white;
-    margin: 30px 60px 30px 30px;
-    border-radius: 5%;
+        background: #262626;
+    }
 
-    font-family: 'Pragati Narrow', sans-serif;
-    text-decoration: none;
-    font-size: 0.55em;
-    color: var(--text-color);
-}
+    .rioLable {
+        padding: 35px 0px 0px 20px;
 
-.contactLable:hover{
-    padding: 10px 25px;
-    border: 2px solid white;
-    margin: 30px 60px 30px 30px;
+        font-family: 'Caveat', cursive;
+        text-decoration: none;
+        font-size: 1.1em;
+        color: var(--text-color);
+    }
 
-    color: #333;
-    background-color: #eaeaea;
+    .navList {
+        padding: 0px 0px 0px 25px;
+
+        font-family: 'BenchNine', sans-serif;
+        font-size: 1.3em;
+    }
+
+    .navListItem {
+        display: inline-block;
+        padding-top: 0px;
+        padding-right: 15px;
+    }
+
+    .navListItem > a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 0.5em;
+        font-family: 'Pragati Narrow', sans-serif;
+        font-weight: 900;
+    }
+
+    .contactLable {
+        padding: 10px 25px;
+        border: 2px solid white;
+        margin: 20px 0px 40px 25px;
+        border-radius: 5%;
+
+        font-family: 'Pragati Narrow', sans-serif;
+        text-decoration: none;
+        font-size: 0.55em;
+        color: var(--text-color);
+    }
+
+    .contactLable:active {
+        padding: 10px 25px;
+        border: 2px solid white;
+        margin: 20px 0px 40px 25px;
+
+        color: #333;
+        background-color: #eaeaea;
+    }
 }
