@@ -1,0 +1,26 @@
+:root{
+
+}
+
+body{
+    display: flex;
+
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.headerConteiner{
+    min-height: 450px;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-image: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    background-size: cover;
+}
