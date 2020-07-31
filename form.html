@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_form.css">
 </head>
 <body>
 
+        <div class="formConteiner">
+                <h1>Contact form</h1>
+                <h4>Please fill in your information and we'll be sending your order</h3>
+
+                    <form id="mainForm">
+                        <div class="labelContainer">
+                            <label for="enterNameInput">Your name</label>
+                            <label for="enterEmailInput">Your email</label>
+                            <label for="enterPhoneInput">Phone *</label>
+                            <label >Message subject *</label>
+                            <label for="enterMassageInput">Message *</label>
+                        </div>
+                        <div class="inputContainer">
+                            <div class="inputSmallConteiner">
+                                <input type="text" placeholder="first name" id="enterNameInput">
+                                <input type="text" placeholder="last name" id="enterLastNameInput">
+                            </div>
+
+                            <input type="email" placeholder="your_mail@mail.com" id="enterEmailInput">
+                            <input type="tel" placeholder="0000000000" id="enterPhoneInput">
+                            <select name="massage" id="selectMassageSubjectInput">
+                                <option disabled selected>Other</option>
+                            </select>
+                            <textarea id="enterMassageInput" rows="5" cols="40"></textarea>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="submitWrapper">
+                        <div>This is a bug</div>
+                        <input type="submit" form="mainForm" value="SUBMIT FORM">
+                    </div>
+        </div>
 </body>
 </html>

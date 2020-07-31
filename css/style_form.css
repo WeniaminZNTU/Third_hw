@@ -1,0 +1,147 @@
+:root{
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+
+    min-width: 100%;
+    min-height: 100vh;
+
+    background-color: #333;
+    background-image: url("https://i.pinimg.com/originals/f6/5c/19/f65c19d6553c85350cb30fb354c41eb1.jpg");
+    background-size: cover;
+    /*text-align: center;*/
+}
+
+/*label{max-width: 30%}*/
+
+h1{
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+h4{
+    font-size: 0.7em;
+    display: inline-block;
+    padding: 0px 0px 10px 0px;
+}
+
+.formConteiner{
+    /*display: flex;*/
+    /*flex-flow: row wrap;*/
+    /*justify-content: space-between;*/
+    /*flex: 1 1 auto;*/
+
+    height: 20.25em;
+    width: 77.5%;
+
+    padding: 4.5vh 2.5vw;
+
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,1);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,1);
+    opacity: 1;
+}
+
+.formConteiner > form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.labelContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    /*align-items: center;*/
+
+    padding: 0px 0px;
+    /*max-width: 30%;*/
+    margin: 0;
+
+    width: 100px;
+}
+
+.labelContainer > label{
+    display: inline-block;
+    padding: 0px 0px 0px 0px;
+    margin: 8px 0px 13.3px 0px;
+    font-size: 0.7em;
+}
+
+.inputContainer{
+    display: flex;
+    flex-flow: column wrap;
+
+    min-width: 80%;
+}
+
+.inputContainer > input{
+    padding: 5px 0px 5px 5px;
+    margin: 0px 0px 14px 0px;
+    border: 0px solid black;
+}
+
+.inputSmallConteiner{
+    display: inline-block;
+    padding: 3px 0px;
+    flex: 1 1 auto;
+}
+
+#enterNameInput{
+    padding: 5px 20.925% 5px 5px;
+    margin-bottom: 8.5px;
+    border: none;
+}
+
+#enterLastNameInput{
+    padding: 5px 20.919% 5px 5px;
+    margin-bottom: 8.5px;
+    border: none;
+}
+
+.inputContainer > select{
+    padding: 5px 0px 5px 5px;
+    margin: 0px 0px 14px 0px;
+    border: none;
+    background-color: white;
+}
+
+hr{
+    size: 1px;
+    width: 790px;
+    color: white;
+    flex: 1 1 auto;
+}
+
+.submitWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitWrapper > div{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+
+    width: 100px;
+
+    padding: 0px;
+    margin: 0px;
+
+    opacity: 0;
+}
+
+.submitWrapper > input{
+    color: white;
+    background-color: transparent;
+    width: 80.16%;
+    border: 1px solid white;
+
+}
