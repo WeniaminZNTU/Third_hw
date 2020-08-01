@@ -4,23 +4,146 @@
 
 body{
     display: flex;
+    /*justify-content: stretch;*/
+    /*align-items: ;*/
+    flex-flow: column nowrap;
 
     font-family: sans-serif;
     color: #fff;
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
+    background-color: #333;
 }
 
 h1{
+    margin: 0;
+
     font-weight: 900;
     font-size: 2em;
 }
 
+h2{
+    font-size: 1.5em;
+    font-weight: 800;
+    padding: 1em 0;
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+/*---Header---*/
 .headerConteiner{
+    display: flex;
+    justify-content: center;
     min-height: 450px;
-    min-width: 100vw;
+    max-height: 450px;
+    min-width: 100%;
+    max-width: 100vw;
+}
+
+.backgroundImage{
+    position: absolute;
+
+    min-height: 450px;
+    min-width: 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-image: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
     background-size: cover;
+
+    background-color: #333;
+    opacity: 0.4;
+    background-image: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    z-index: -1;
+
+}
+
+.textConteiner{
+    padding: 0 1.5em;
+    margin: 0;
+    max-width: 800px;
+    max-height: 450px;
+}
+
+.textConteiner > h1{
+    padding-top: 100px;
+}
+
+.textConteiner > p{
+    padding: 1em 0;
+}
+
+.textConteiner > a{
+    display: inline-block;
+
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    border: 1px solid gray;
+
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #333333;
+}
+
+.textConteiner > a:hover{
+    display: inline-block;
+
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    border: 1px solid gray;
+
+    color: #333;
+    text-decoration: none;
+    background-color: white;
+}
+
+/*---firstTextSection---*/
+.firstTextSection{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    color: #333333;
+    background-color: #EAEAEA;
+}
+
+.secondSectionTextWrapper{
+    display: flex;
+    justify-content: center;
+
+    max-width: 850px;
+}
+
+.secondSectionTextWrapper > p{
+    font-size: 1em;
+    padding-bottom: 3em;
+
+    columns: 2;
+    column-gap: 2em;
+}
+
+
+/*---Third section*/
+.listSecondSection{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-around;
+}
+
+.cardSection {
+    width: 300px;
+    height: 700px;
+
+    background-color: #;
+}
+
+.cardSection > img{
+    width: 150px;
+    height: 100px;
 }
